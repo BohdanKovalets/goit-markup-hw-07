@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -42,21 +43,98 @@
           </ul>
         </nav>
         <address class="header-address">
-          <ul class="header-address-list list">
-            <li>
-              <a
-                class="header-address-link link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+          <div class="container-header-address">
+            <ul class="header-address-list list">
+              <li>
+                <a
+                  class="header-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="header-address-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </address>
+        <button type="button" data-menu-open class="menu-open-btn">
+          <svg class="icon-open-btn" width="32" height="22">
+            <use href="./images/icons.svg#icon-icon-open-1"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" data-menu-close class="menu-button">
+          <svg class="menu-icon" width="8" height="8">
+            <use
+              href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+        <nav class="menu-navigation">
+          <ul class="menu-list list">
+            <li class="menu-item list">
+              <a href="./index.html" class="menu-link link">Studio</a>
             </li>
-            <li>
-              <a class="header-address-link link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+            <li class="menu-item list">
+              <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+            </li>
+            <li class="menu-item list">
+              <a href="" class="menu-link link">Contacts</a>
             </li>
           </ul>
+        </nav>
+        <address class="menu-address">
+          <div class="container-menu-address">
+            <ul class="menu-address-list list">
+              <li>
+                <a class="menu-address-link-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
         </address>
+        <ul class="menu-soc-list list">
+          <li class="menu-soc-item">
+            <a class="menu-soc-link link" href="">
+              <svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-soc-item">
+            <a class="menu-soc-link link" href="">
+              <svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-soc-item">
+            <a class="menu-soc-link link" href="">
+              <svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-soc-item">
+            <a class="menu-soc-link link" href="">
+              <svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-logo"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -137,6 +215,7 @@
           <ul class="work-list list">
             <li class="work-item">
               <img
+                srcset="./images/doing-1-x2.jpg 2x"
                 src="./images/doing-1.jpg"
                 alt="we are doing-1"
                 width="360"
@@ -145,6 +224,7 @@
             </li>
             <li class="work-item">
               <img
+                srcset="./images/doing-2-x2.jpg 2x"
                 src="./images/doing-2.jpg"
                 alt="we are doing-2"
                 width="360"
@@ -153,6 +233,7 @@
             </li>
             <li class="work-item">
               <img
+                srcset="./images/doing-3-x2.jpg 2x"
                 src="./images/doing-3.jpg"
                 alt="we are doing-3"
                 width="360"
@@ -168,6 +249,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/employee-1-x2.jpg 2x"
                 src="./images/employee-1.jpg"
                 alt="employee-1"
                 width="264"
@@ -212,6 +294,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/employee-2-x2.jpg 2x"
                 src="./images/employee-2.jpg"
                 alt="employee-2"
                 width="264"
@@ -256,6 +339,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/employee-3-x2.jpg 2x"
                 src="./images/employee-3.jpg"
                 alt="employee-3"
                 width="264"
@@ -300,6 +384,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/employee-4-x2.jpg 2x"
                 src="./images/employee-4.jpg"
                 alt="employee-4"
                 width="264"
@@ -397,7 +482,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-logo-divv">
           <a class="logo-link link" href="./index.html"
             >Web<span class="footer-logo link">Studio</span></a
           >
@@ -540,6 +625,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
