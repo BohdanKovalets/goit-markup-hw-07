@@ -156,9 +156,11 @@ address {
   padding: 24px 24px 40px 40px;
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-link {
@@ -179,7 +181,6 @@ address {
 }
 .menu-button {
   display: block;
-  margin-left: auto;
   margin-bottom: 32px;
   background: #e7e9fc;
   border-radius: 50%;
@@ -188,6 +189,9 @@ address {
   height: 24px;
   transition: background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 .menu-icon {
   display: block;
@@ -212,22 +216,21 @@ address {
   transition: fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-navigation {
-}
-.menu-list {
-}
 
+.menu-list {
+  margin-top: 56px;
+}
 .menu-item {
   margin-bottom: 40px;
 }
-.menur-item {
-}
 .menu-address {
+  margin-top: auto;
 }
-.container-menu-address {
+.menu-studio-link {
+  color: #404bbf;
 }
+
 .menu-address-list {
-  margin-top: 244px;
   margin-bottom: 48px;
 }
 .menu-address-link-tel {
@@ -307,6 +310,21 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
+  max-width: 428px;
+  height: 432px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-mobile-2x.jpg);
+  }
 }
 
 .hero-title {
