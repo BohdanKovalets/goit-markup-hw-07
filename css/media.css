@@ -10,26 +10,17 @@
     width: 320px;
   }
   .hero {
-    max-width: 320px;
-    height: 312px;
+    max-width: 428px;
+    height: 432px;
     margin: 0 auto;
   }
+
   .hero-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: calc(26 / 24);
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    text-align: center;
-    width: 260px;
-    height: 80px;
+    max-width: 320px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
-    margin-bottom: 22px;
-  }
-  .hero-button {
-    font-size: 12px;
-    border-radius: 4px;
-    padding: 12px 26px;
+    margin-bottom: 72px;
   }
   /**----------------------OPPORTUNITIES---------------------**/
   .opportunities-list {
@@ -39,9 +30,6 @@
   }
   .opportunities-titles {
     text-align: center;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: calc(32 / 28);
   }
   /**----------------------WORK---------------------**/
   .work {
@@ -141,12 +129,6 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-  }
-
-  .menu-link {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: calc(32 / 28);
   }
 
   .menu-list {
